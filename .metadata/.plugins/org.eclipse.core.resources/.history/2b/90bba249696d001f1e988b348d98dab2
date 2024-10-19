@@ -1,0 +1,32 @@
+package kellyDayCalculator;
+
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
+
+import javax.swing.JOptionPane;
+
+public class MeatAndPotatoes {
+	MeatAndPotatoes(String userEnteredDate, Integer iterationCount, LocalDate enteredDates, DayOfWeek dayOfWeek){
+		
+		if(dayOfWeek == DayOfWeek.WEDNESDAY) 
+		{
+		    int counter = 0;
+		    LocalDate currentKellyDay = enteredDates; // Use a variable to track the current Kelly Day
+		    
+		    while(counter < iterationCount)
+		    {
+		        // Add 45 days to the current Kelly Day
+		        currentKellyDay = currentKellyDay.plus(45, ChronoUnit.DAYS); 
+		        counter = counter + 1;
+		        System.out.println(counter + ". " + currentKellyDay);
+		        
+		        if(counter < iterationCount) // Ensure this check allows the loop to continue
+		        {
+		            // Add 39 days to the current Kelly Day
+		            currentKellyDay = currentKellyDay.plus(39, ChronoUnit.DAYS);
+		            counter = counter + 1;
+		            System.out.println(counter + ". " + currentKellyDay);
+		        }
+		    }
+		}

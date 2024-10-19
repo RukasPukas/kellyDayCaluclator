@@ -1,0 +1,18 @@
+package kellyDayCalculator;
+
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+
+public class MeatAndPotatoes {
+	MeatAndPotatoes(String userEnteredDate, Integer iterationCount, LocalDate enteredDates, DayOfWeek dayOfWeek){
+		
+		if(dayOfWeek == DayOfWeek.WEDNESDAY) {
+			
+		}
+		else if(dayOfWeek ==DayOfWeek.SATURDAY) {
+			
+		}
+		
+	}
+
+}

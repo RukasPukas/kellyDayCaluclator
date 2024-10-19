@@ -1,0 +1,12 @@
+package kellyDayCalculator;
+
+import java.time.LocalDate;
+
+public class DateRangeCheck {
+	DateRangeCheck(String userEnteredDate, Integer iterationCount){
+		
+		LocalDate currentDate = LocalDate();
+		
+	}
+
+}

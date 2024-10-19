@@ -1,0 +1,40 @@
+package kellyDayCalculator;
+
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
+
+import javax.swing.JOptionPane;
+
+public class MeatAndPotatoes {
+	MeatAndPotatoes(String userEnteredDate, Integer iterationCount, LocalDate enteredDates, DayOfWeek dayOfWeek){
+		
+		if(dayOfWeek == DayOfWeek.WEDNESDAY) 
+		{
+			int counter = 0;
+			while(counter < iterationCount)
+			{
+				LocalDate nextKellyday = enteredDates.plus(45, ChronoUnit.DAYS); 
+				counter = counter+1;
+				System.out.println(counter+"."+nextKellyday);
+				if(counter <= iterationCount)
+				{
+					nextKellyday.plus(39, ChronoUnit.DAYS);
+					counter = counter+1;
+					System.out.println(counter+"."+nextKellyday);
+				}
+			}
+			
+		}
+		else if(dayOfWeek ==DayOfWeek.SATURDAY) 
+		{
+			
+		}
+		else 
+		{
+			JOptionPane.showMessageDialog(null, "ALARM ALARM ALARM ALARM\n\nSECURITY BREACH DETECTED");
+		}
+		
+	}
+
+}

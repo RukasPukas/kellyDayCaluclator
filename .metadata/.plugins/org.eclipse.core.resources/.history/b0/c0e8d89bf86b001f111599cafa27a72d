@@ -1,0 +1,28 @@
+package kellyDayCalculator;
+
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+import java.util.Calendar;
+
+import javax.swing.JOptionPane;
+
+public class WedSatCheck {
+
+	WedSatCheck(String userEnteredDate, Integer iterationCount, LocalDate enteredDates){
+		
+		
+		 DayOfWeek dayOfWeek = enteredDates.getDayOfWeek();
+		 System.out.println(dayOfWeek);
+		 
+		 if(dayOfWeek == dayOfWeek.WEDNESDAY ||dayOfWeek == dayOfWeek.SATURDAY) {
+			 System.out.println("Date entered is a Wednesday or Saturday.");
+		 }
+		 else
+		 {
+			 System.out.println("Date entered is not a Wednesday or Saturday.");
+			 JOptionPane.showMessageDialog(null, "This program is only designed to handle Kelly days on rotating WEDNESDAY or SATURDAY entries.");
+		 }
+	}
+	
+	
+}

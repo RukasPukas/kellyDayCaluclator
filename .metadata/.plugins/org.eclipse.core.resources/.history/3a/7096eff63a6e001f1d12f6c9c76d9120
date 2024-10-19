@@ -1,0 +1,9 @@
+package kellyDayCalculator;
+
+public class OutputDisplay {
+	 OutputDisplay(StringBuilder totalString)
+	{
+		
+	}
+
+}

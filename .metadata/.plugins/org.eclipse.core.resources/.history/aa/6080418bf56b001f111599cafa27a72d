@@ -1,0 +1,14 @@
+package kellyDayCalculator;
+
+import java.util.Calendar;
+
+public class WedSatCheck {
+
+	WedSatCheck(String userEnteredDate, Integer iterationCount){
+		
+		Calendar checkCalendar = new Calendar.getInstance(); 
+		
+	}
+	
+	
+}

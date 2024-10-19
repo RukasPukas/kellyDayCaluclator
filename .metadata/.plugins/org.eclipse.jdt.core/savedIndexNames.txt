@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\16184\Desktop\Kelly Day Calculator\.metadata\.plugins\org.eclipse.jdt.core
+3880762515.index
+2763317139.index
+1865797976.index

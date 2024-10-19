@@ -1,0 +1,25 @@
+package kellyDayCalculator;
+
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+import java.util.Calendar;
+
+public class WedSatCheck {
+
+	WedSatCheck(String userEnteredDate, Integer iterationCount, LocalDate enteredDates){
+		
+		
+		 DayOfWeek dayOfWeek = enteredDates.getDayOfWeek();
+		 System.out.println(dayOfWeek);
+		 
+		 if(dayOfWeek.equals("WEDNESDAY") || dayOfWeek.equals("SATURDAY")) {
+			 System.out.println("Continue");
+		 }
+		 else
+		 {
+			 System.out.println("Discontinue");
+		 }
+	}
+	
+	
+}

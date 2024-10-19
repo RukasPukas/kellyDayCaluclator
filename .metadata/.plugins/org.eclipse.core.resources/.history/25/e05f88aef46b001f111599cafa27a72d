@@ -1,0 +1,10 @@
+package kellyDayCalculator;
+
+public class WedSatCheck {
+
+	WedSatCheck(String userEnteredDate, Integer iterationCount){
+		
+	}
+	
+	
+}
